@@ -54,7 +54,8 @@ boxConcMonth<-function(eList, printTitle = TRUE,
   
   title2<-if(paLong==12) "" else setSeasonLabelByUser(paStartInput=paStart,paLongInput=paLong)
   #This function makes a boxplot of log concentration by month
-  #Box width is proportional to the square root of the sample size
+  #Box width is proportional to the square root of the sample size.
+  # Add some additional clarification to the comments.
   plotTitle<-if(printTitle) paste(localINFO$shortName,"\n",localINFO$paramShortName,"\nBoxplots of sample values by month") else ""
   #   nameList <- sapply(c(1:12),function(x){monthINFO[[x]]@monthSingle})
   nameList <- sapply(c(1:12),function(x){monthInfo[[x]]@monthAbbrev})
